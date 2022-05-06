@@ -8,7 +8,7 @@ POST {{url}}/messages
 Content-Type: application/json
 
 {
-    "name": "Random <>>",
-    "email": "random@emil.com",
-    "message": "just doing some random stuff"
+    "name": "Random Randy",
+    "email": "random@aol.com",
+    "message": "he tehre"
 }

@@ -1,7 +1,7 @@
 import { body } from 'express-validator'
 
-const notAllowed = "/<>*%^~`'{}{}|"
-const alpha = "abcdefghijklmnopqrstuvwxyz? "
+const notAllowed = "<>*%^~`'{}{}|"
+const alpha = "abcdefghijklmnopqrstuvwxyz?!/ "
 const upperAlpha = alpha.toUpperCase()
 const symbolsNumber = "+-().1234567890 "
 

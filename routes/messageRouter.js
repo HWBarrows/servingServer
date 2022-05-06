@@ -14,7 +14,7 @@ messageRouter.post("/", errorMessage(messageSanitizer), async (req, res, next)=>
     try {
         const sentMessage = await Message.create(req.body)
         const submissionId = sentMessage._id
-        res.status(200).send({"submissionID": submissionId})
+        res.status(200).send({"submissionID": submissionId, "submittedName": req.body.name})
     }catch(error){
         next({error:400, message: "request could not be completed"})
     }
