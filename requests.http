@@ -1,0 +1,14 @@
+@url = http://localhost:3030
+
+GET {{url}}/messages
+
+###
+
+POST {{url}}/messages
+Content-Type: application/json
+
+{
+    "name": "Random <>>",
+    "email": "random@emil.com",
+    "message": "just doing some random stuff"
+}
