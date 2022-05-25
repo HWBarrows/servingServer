@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 import { connect } from'./lib/database.js'
 import messageRouter from './routes/messageRouter.js'
+import creditsRouter from './routes/creditsRouter.js'
 
 dotenv.config()
 const app = express()
@@ -11,6 +12,7 @@ app.use(express.json())
 connect()
 
 app.use("/messages", messageRouter)
+app.use("/credits", creditsRouter)
 // app.get("/", (req, res, next)=> {
 //     res.send("I am root")
 // })

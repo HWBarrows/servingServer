@@ -10,5 +10,9 @@ Content-Type: application/json
 {
     "name": "Random Randy",
     "email": "random@aol.com",
-    "message": "he tehre"
+    "message": "he tehre!..How have You bee?"
 }
+
+###
+
+GET {{url}}/credits?project=PureSweetness
